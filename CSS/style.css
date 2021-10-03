@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior:smooth;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+}
+/* navigation bar */
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+}
+#navbar{
+    display: flex;
+    position: absolute;
+    font-family: 'Baloo Bhai 2', cursive;
+    width: 100%;
+
+    /* border: 2px solid red; */
+}
+.logo{
+    /* border: 2px solid red; */
+}
+.logo img{
+    display: inline-block;
+    filter: invert(100%);
+    width: 4rem;
+    padding-left: 36px;
+    
+}
+#logotext{
+    margin-top: -10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+#navbar ul{
+    /* border: 2px solid green; */
+    display: flex;
+    height: 1.5rem;
+    align-self: center;
+    /* margin-left: 21.5rem; */
+}
+#navbar ul li{
+    display: inline-block;
+    list-style: none;
+}
+#navbar ul li a{
+    display: block;
+    font-size: 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.2rem 2rem;
+}
+#navbar ul li a:hover{
+    color: black;
+    /* font-size: 1.5rem; */
+    background-color: white;
+}
+.intro{
+    margin: 0px;
+    /* border: 2px solid violet; */
+    padding: 0px;
+}
+.intro::before{
+    content: "";
+    position: fixed;
+    padding-top: 0.5rem;
+    background: url(https://images.unsplash.com/photo-1598518619776-eae3f8a34eac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80) no-repeat center center/cover ;
+    /* background-size: 100rem 60rem; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+/* Section Home */
+#home{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    align-content: center;
+    justify-content: center;
+    padding-top: 40rem;
+    padding-bottom: 20rem;
+}
+#home h4{
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+#home p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.h-primary{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;    
+    line-height: 4rem;
+    /* line-height: 4rem; */
+    letter-spacing: 0.15rem;
+}
+.btn{
+    margin: 1rem;
+    padding:1rem 2rem ;
+    border-radius: 15px;
+    align-self: center;
+    font-size: 1.5rem;
+    background-color: #ffffff96;
+}
+.btn:hover{
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+    background-color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* intro over */
+
+/* SERVICES SECTION */
+.service-container{
+    /* border-radius: 10px; */
+    background-color:white;
+    text-align: center;
+}
+#services{
+    background-color: white;
+    display: flex;
+    margin: 34px;
+}
+#box{
+    /* border: 2px solid blue; */
+    background-color:#efefef;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 34px;
+    margin: 2rem;
+}
+#box img{
+    height: 17rem;
+    width: 20rem;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+#box:hover{
+    /* font-size: 1.5rem; */
+    width: 100%;
+    color: white;
+    /* background-color:#efefef; */
+    background-color:black
+}
+
+/* REGISTRATION FORM  */
+.form-container{
+    margin: 6rem 18rem;
+    margin-bottom: 1rem;
+    padding:auto;
+    padding-bottom: 5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ffffff26;
+    z-index: -1;
+}
+.regform h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: -2rem;
+    margin-bottom: auto;
+    /* margin-left: 4.7rem; */
+}
+#reginfo {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+#reginfo p{
+    margin: 0.3rem;
+    padding: 2px;
+    font-size: 1rem;
+}
+#reginfo fieldset{
+    padding: 24px 12px;
+}
+#reginfo div{
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem;
+}
+#reginfo input{
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+#reginfo textarea{
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+#reginfo button{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 1rem 5rem;
+    margin-bottom: -0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+#reginfo button:hover{
+    font-size: 1rem;
+    border: 2px solid grey;
+    background-color: black;
+    color: white;
+}
+
+/* FOUNDER AND FOOTER */
+
+ /*Founder part designing*/
+
+ .founder{background-color: rgb(245, 241, 240);
+    text-align: center;
+}
+.founder img{
+    border-radius: 25rem;
+    width: 8rem;
+    opacity: 95%;
+}
+/*footer styling*/
+footer {
+    height: 2rem;
+background-color: #333;
+overflow: hidden;
+}
+
+footer a {
+text-decoration: none;
+padding: 7px;
+text-align: center;
+float: left;
+color: white;
+}
+
+/* UTILITY CLASES */
+.center{
+    text-align: center;
+}
+.subhead{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: -4rem;
+}
+#h-secondary{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 12px;
+}
+
+        /* PHONE STYLE SHEET */
+
