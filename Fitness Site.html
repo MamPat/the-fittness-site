@@ -6,32 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fittness Club</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" media="screen and (min-width:350) (max-width:1200px)" href="css/phone.css">
     <link rel="stylesheet" media="screen and (max-width:340px)" href="css/phone2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 
 <body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="services">Service</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
     <div class="intro">
-        <nav id="navbar">
-            <div class="logo">
-                <img src="https://image.flaticon.com/icons/png/512/38/38464.png" alt="W3Schools.com">
-                <div id="logotext">Fitness Club</div>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-            <!-- <div class="navbackground"></div> -->
-        </nav>
+      
         <section id="home">
-            <h1 class="h-primary">WELCOME TO THE Fitness Club</h1>
-            <h4>Taan Maan aur Atma KI Shanti</h4>
+            <h1 class="jt --debug">
+                <span class="jt__row">
+                  <span class="jt__text">Taan Maan aur Atma KI Shanti</span>
+                </span>
+                <span class="jt__row jt__row--sibling" aria-hidden="true">
+                  <span class="jt__text">Taan Maan aur Atma KI Shanti</span>
+                </span>
+                <span class="jt__row jt__row--sibling" aria-hidden="true">
+                  <span class="jt__text">Taan Maan aur Atma KI Shanti</span>
+                </span>
+                <span class="jt__row jt__row--sibling" aria-hidden="true">
+                  <span class="jt__text">Taan Maan aur Atma KI Shanti</span>
+                </span>
+              </h1>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique commodi quam porro itaque, repellendus
                 ut veritatis voluptatibus, maiores pariatur, quis obcaecati! Architecto, alias aperiam? Lorem ipsum
                 dolor sit amet consectetur adipisicing elit. Nesciunt accusantium a adipisci magnam sint quasi dicta qui
@@ -116,28 +127,64 @@
             </section>
         </form>
     </section>
-    <!--Founder And Footer-->
-    <section class="founder">
-        <h2>
-            Our Founder
-        </h2>
-    
-        <img src="" alt="">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio modi saepe aliquid, laudantium reiciendis consectetur et deleniti eum. Veritatis quia quam atque sequi quo. Neque cumque consectetur odit deleniti minima?</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptas placeat incidunt voluptatum? A enim magnam perferendis eligendi, hic ratione adipisci quae suscipit quam nobis dolore provident impedit ipsam necessitatibus.</p>
-        <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="https://instagram/" target="_blank" rel="noopener noreferrer">Instagram</a>
 
-      </section>
-    <footer id="about">
-        <a href="#">FAQ</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Refund Policy</a>
-        <a href="#">&copy; 2021</a>
-    </footer>
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Our Founder<i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sapiente magnam reiciendis fugit optio et voluptatibus, minima ducimus aliquam? Maiores possimus natus atque accusamus consequatur distinctio recusandae. Necessitatibus dolorem consequatur iure voluptas!</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="">Fight Club</a></li>
+                <li><a href="">Martial Arts</a></li>
+                <li><a href="">Body building</a></li>
+                <li><a href="">Yoga</a></li>
+                <li><a href="">Fitness Exercies</a></li>
+                <li><a href="">Diet Plan</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Contribute</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+           <a href="https://github.com/MamPat">@Mampat</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+
+
+
 </body>
 
 </html>
