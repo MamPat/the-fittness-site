@@ -13,7 +13,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;700&display=swap" rel="stylesheet">
 </head>
+<style>
 
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-text{
+    color:#e61f1f;
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .dynamic-text{
+margin-bottom: 5px;
+}
+.dynamic-text li{
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    color:#e61f1f;
+}
+.dynamic-text li span{
+    position: relative;
+}
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: white;
+    border-left: 2px solid #eaeaea;
+    animation: typing 1.5s steps(19) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+margin: 0 -35px 0 35px;
+    }
+}
+
+
+</style>
 <body>
     <div class="intro">
         <nav id="navbar">
@@ -30,7 +71,13 @@
             <!-- <div class="navbackground"></div> -->
         </nav>
         <section id="home">
-            <h1 class="h-primary">WELCOME TO THE Fitness Club</h1>
+            <div class="wrapper">
+                <div class="static-text">Welcome</div>
+                <ul class="dynamic-text">
+                    <li><span>To the fitness club</span></li>
+                </ul>
+                </div>
+            <!-- <h1 class="h-primary">WELCOME TO THE Fitness Club</h1> -->
             <h4>Taan Maan aur Atma KI Shanti</h4>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique commodi quam porro itaque, repellendus
                 ut veritatis voluptatibus, maiores pariatur, quis obcaecati! Architecto, alias aperiam? Lorem ipsum
