@@ -15,9 +15,10 @@ Thanks😊😊
 
 - Fork this repository
 - Clone your repo
-- Add your name in readme.md
-- Push
-- Pull request
+- Add necessary and valuable changes.
+- Dont Spam and make simplr typo changes.
+- Commit your changes in your forked repo
+- Create and send a Pull request.
 
 ## Read more at
 
