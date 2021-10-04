@@ -1,0 +1,146 @@
+package BST;             //implementation,get parent,sibbling,delete node
+
+class Node{
+	int data;
+	Node left;
+	Node right;
+}
+
+class bstImplement {
+	Node createnewNode(int v) {
+		Node n=new Node();
+		n.data=v;
+		n.left=null;
+		n.right=null;
+		return n;
+	}
+	public Node insert(Node n,int val) {
+		if(n==null) {
+			return createnewNode(val);
+		}
+		if(val<n.data) {
+			n.left=insert(n.left,val);
+		}
+		 if(val>n.data) {
+			n.right=insert(n.right,val);
+		}
+		return n;
+	}
+	void preorder(Node n) {
+		if(n==null)return;
+		System.out.println(n.data);
+		preorder(n.left);
+		preorder(n.right);
+}
+	
+	//delete a node
+	Node delete(Node node,int val) {
+		if(node==null)return null;
+		if(val<node.data) node.left=delete(node.left,val);
+		else if(val>node.data) node.right=delete(node.right,val);
+		else {
+			if(node.left==null||node.right==null) {
+				if(node.left==null&&node.right==null)return null;
+				if(node.left==null)return node.right;
+				if(node.right==null) return node.left;
+			}
+			else {
+			Node t=getSuccessor(node);	
+			node.data=t.data;
+			
+			node.right=delete(node.right,t.data);
+			return node;
+			}
+		}
+		
+		return node;
+	}
+	Node getSuccessor(Node node) {
+		if(node==null)return null;
+		Node t=node.right;
+		while(t.left!=null)t=t.left;
+		return t;
+	}
+	
+	void inOrder(Node node) {
+		if(node==null )return;
+		inOrder(node.left);
+		System.out.println(node.data);
+		inOrder(node.right);
+		return ;
+	}
+	
+	
+	static int c=0;
+	void klargest(Node node,int k) {
+		if(node==null )return;
+		klargest(node.right,k);
+		c++;
+		if(c==k) {
+			System.out.println(node.data);
+              return;
+		}
+		klargest(node.left,k);
+		
+	}
+	
+	Node getSibbling(Node node,int val) {
+		if(node==null||val==node.data)return null;
+		Node parent=null;
+		
+		while(node!=null) {
+			if(val<node.data) {
+				parent=node;
+				node=node.left;
+			}
+			else if(val>node.data) {
+				parent=node;
+				node=node.right;
+			}
+			else break;
+		}
+		if(parent.left!=null&&val==parent.left.data)return parent.right;
+		if(parent.right!=null&&val==parent.right.data)return parent.left;
+	
+		return null;
+	}
+	
+	
+	boolean bst=true;
+	Node prev =null;
+	void ifBST(Node node) {
+		if(node==null)return;
+        ifBST(node.left);
+        if(prev!=null&&node.data<prev.data) {
+        	bst=false;
+        	return;
+        }
+        prev=node;
+        ifBST(node.right);
+	}
+	
+}
+public class implementation {
+public static void main(String args[]) {
+	bstImplement a=new bstImplement();
+	Node n=null;
+	n=a.insert(n, 8);
+	n=a.insert(n, 10);
+	n=a.insert(n, 3);
+	n=a.insert(n, 1);
+	n=a.insert(n, 6);
+	n=a.insert(n, 14);
+	n=a.insert(n, 4);
+	n=a.insert(n, 7);
+	n=a.insert(n, 13);
+	//System.out.println(n.data);
+	//n=a.delete(n, 6);
+	//a.inOrder(n);
+//	Node b=a.getSibbling(n,8);
+//	if(b!=null)System.out.println(b.data);
+//	else System.out.println("no sibbling");
+	//a.klargest(n, 12);
+	a.ifBST(n);
+	System.out.println(a.bst);
+}
+}
