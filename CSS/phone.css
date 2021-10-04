@@ -1,0 +1,117 @@
+
+/* NAVBAR */
+#navbar{
+    flex-direction: column;
+    width: 38rem;
+    align-items: center;
+}
+.logo img{
+    display: block;
+    margin: auto;
+    width: 7rem;
+    padding: 0;
+}
+#logotext{
+    font-size: 2.5rem;
+}
+#navbar ul li a {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/* intro */
+.intro::before{
+    border: 2px solid red;
+    width: 38rem;
+}
+
+/* home */
+#home{
+    width: 68rem;
+padding-top: 68rem;
+}
+.btn{
+    padding: 2rem 3rem;
+}
+
+/* services */
+#services{
+flex-direction: column;
+align-items: center;
+}
+
+.service-container {
+    width: 68rem;
+}
+#box{
+    width: 40rem;
+}
+#box:hover{
+    width: 60%;
+}
+#box img{
+    height: 19rem;
+    width: 22rem;
+}
+
+/* reg form */
+.form-container{
+    /* border: 2px solid yellow; */
+    width: 50rem;
+    margin: 6rem 10rem;
+}
+#reginfo{
+    margin: 0rem 8rem;
+    padding: 5rem 4rem;
+}
+.regform h2 {
+    font-size: 2.8rem;
+}
+#reginfo label{
+    font-size: 2rem;
+}
+#reginfo button{
+    font-size: 1.8rem;
+}
+
+/* fouunder */
+.founder{
+    width: 68rem;
+}
+.founder h2{
+    font-size: 3rem;
+}
+.founder img {
+    border-radius: 25rem;
+    width: 20rem;
+    opacity: 95%;
+}
+#foundername{
+    font-size: 2.5rem;
+}
+.founder h3,a{
+    font-size: 2rem;
+} 
+
+/* footer */
+footer{
+    display: flex;
+    height: fit-content;
+    width: 68rem;
+}
+footer a{
+    font-size: 1.3rem;
+}
+/* utility class */
+.h-primary{
+    font-size: 3.6rem;
+}
+#h-secondary {
+    font-size: 2.5rem;
+}
+.subhead{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.8rem;
+}
