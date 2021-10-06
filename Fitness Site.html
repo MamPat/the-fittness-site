@@ -92,39 +92,70 @@
             </div>
         </div>
     </section>
-    <section class="form-container" id="contact">
-        <form action="" class="regform">
-            <section id="reginfo">
-                <h2 class="subhead">Registration Form</h2>
-                
-                    <label for="name">Name </label>
-                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
-                
-                
-                    <fieldset>
-                        <legend>Gender</legend>
-                        <input type="radio" name="Gender" id="Male">
-                        <label for="Male">Male</label>
-                        <input type="radio" name="Gender" id="Female">
-                        <label for="Female">Female</label>
-                        <input type="radio" name="Gender" id="Other">
-                        <label for="Other">Other</label>
-                    </fieldset>
-                
-                
-                    <label for="Email">Email </label>
-                    <input type="email" name="Email" id="Email" placeholder="Enter Your email">
-                
-                
-                    <label for="Phone Number">Phone Number </label>
-                    <input type="number" name="Phone Number" id="Phone Number" placeholder="Enter Your Phone Number">
-                 
-                <div>
-                    <label for="Message">Message </label>
-                    <textarea name="message" id="message" cols="25" rows="5" placeholder="Enter Your Text Here"></textarea>
-                </div>
-                <button>Register Now</button>
-            </section>
+    <div id="outside">
+      <form id="survey-form" action="/my-handling-form-page" method="post">
+        <h1 id="title">Registration Form For Fitness Club</h1>
+        <p id="description"><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+        
+        <!-- ------------------Personal Details---------------------------- -->
+        <fieldset>
+          <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+          <legend>Personal Details</legend>
+          <!-- formally describes the purpose of the fieldset it is included inside. -->
+          <div>
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+          <div>
+            <label for="address-label">Address:</label>
+            <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+          <div>
+            <label id="email-label" for="Email">Email:</label>
+            <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+          <div>
+            <label id="number-label" for="phone">Phone Number:</label>
+            <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9">  </div>
+      
+          <!-- ------------------Radio Buttons-------------------------------- -->
+          <div>
+            <label for="Gender">Gender</label>
+            <p>
+              <input type="radio" name="gender" value="male" checked> Male<br>
+              <input type="radio" name="gender" value="female"> Female<br>
+              <input type="radio" name="gender" value="other"> Other
+            </p>
+          </div>        
+        </fieldset>
+        
+        <!-- -----------------Dropdown menus--------------------------------- -->
+        
+        <fieldset>
+          <div>
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" placeholder="In kgs">
+          </div>
+        </fieldset>
+      
+        <!-- --------------------Text Areas------------------------------ -->
+        
+        <fieldset>
+          <legend>Remarks Section</legend>
+          <div>
+            <label for="msg"></label>
+            <p><b>Why do you want to join Fitness Club</b></p>
+            <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+          <div>
+            <label for="msg">Please mention your package plan</label><br>
+            <input type="text" id="msg" name="user_message" placeholder="Enter Text Here"></input>   
+          </div>
+          <br><p><b>Medical Certifiates here:</b>
+            <button>Attach Files</button></p>
+        </fieldset>
+      
+        <div id="submitbutton">
+          <button type="submit" id="submit">Send your application</button>   </div>
+      
+      </form>
+        </div>
         </form>
     </section>
 
