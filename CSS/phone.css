@@ -2,11 +2,11 @@
 /* NAVBAR */
 #navbar{
     flex-direction: column;
-    width: 38rem;
+    width: 28rem;
     align-items: center;
 }
 .logo img{
-    display: block;
+    display: inline;
     margin: auto;
     width: 7rem;
     padding: 0;
