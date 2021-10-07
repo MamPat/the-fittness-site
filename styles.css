@@ -1,4 +1,10 @@
  /* Add a black background color to the top navigation */
+ .header{
+   padding: 100px;
+   text-align: center;
+   color: #ffff;
+ }
+
  .topnav {
     background-color: #333;
     overflow: hidden;
@@ -27,6 +33,7 @@
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 
 .jt {
     position: relative;
@@ -114,15 +121,16 @@
 * { box-sizing: border-box }
 
 
-html, body {
-    background: #ff5f6d;
-    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
-    background: linear-gradient(to right, #ff5f6d, #ffc371);
-    max-width: 100%;
+* { box-sizing: border-box }
+
+
+body {
+  
+    background: linear-gradient(to right, #ff5f6d, #ff9500);
     overflow-x: hidden;
+    text-align: center;
+    
 }
-
-
 
 
 
@@ -416,7 +424,3 @@ button {
   
 }
 
-#submitbutton {
-  display: flex; 
-  justify-content: center;
-}
