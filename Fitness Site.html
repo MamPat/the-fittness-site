@@ -17,6 +17,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@600&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -24,7 +28,7 @@
         <a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
         <a href="services">Service</a>
         <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-        <a href="#about">About</a>
+        <a href="/About.html">About</a>
       </div>
     <div class="intro">
       
@@ -47,7 +51,30 @@
                 ut veritatis voluptatibus, maiores pariatur, quis obcaecati! Architecto, alias aperiam? Lorem ipsum
                 dolor sit amet consectetur adipisicing elit. Nesciunt accusantium a adipisci magnam sint quasi dicta qui
                 explicabo nam recusandae.</P>
-            <button class="btn">Register Now</button>
+                <style>
+                  #btns{
+                    font-family: 'Noto Sans Display', sans-serif;
+                    position: relative;
+                  }
+                  #btns {
+        padding: 20px 20px;
+        display: inline-block;
+        color: #74e907;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+        overflow: hidden;
+    }
+    #btns:hover {
+        color: rgb(250, 248, 248);
+        background: #39ff14;
+        box-shadow: 0 0 50px #39ff14;
+    }
+
+
+                </style>
+            <button class="btn" id="btns">Register Now</button>
         </section>
     </div>
     <section class="service-container" id="service">

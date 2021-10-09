@@ -111,21 +111,26 @@
     /* line-height: 4rem; */
     letter-spacing: 0.15rem;
 }
-.btn{
-    margin: 1rem;
+/* .btn{  
+margin: 1rem;
     padding:1rem 2rem ;
     border-radius: 15px;
     align-self: center;
     font-size: 1.5rem;
-    background-color: #ffffff96;
-}
-.btn:hover{
+    background-color: #25005096;
+   
+}*/
+/*  
+.btn:hover{ 
     font-family: 'Baloo Bhai 2', cursive;
     cursor: pointer;
     background-color: white;
     font-size: 2rem;
     font-weight: bold;
-}
+
+}*/
+
+
 /* intro over */
 
 /* SERVICES SECTION */
