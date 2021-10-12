@@ -39,6 +39,7 @@
 
 .jt__row {
   display: block;
+  
 }
 .jt__row:nth-child(1) {
   clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
@@ -58,11 +59,11 @@
   top: 0;
   left: 0;
   user-select: none;
-  witdh:800px;
+  
 }
 
 .jt__text {
-  display: block;
+  display: flex;
   transform-origin: bottom left;
   animation: moveIn 2s 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
 }
