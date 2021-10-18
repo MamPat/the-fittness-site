@@ -22,9 +22,8 @@
 
     /* border: 2px solid red; */
 }
-.logo{
-    /* border: 2px solid red; */
-}
+
+
 .logo img{
     display: inline-block;
     filter: invert(100%);
@@ -148,6 +147,8 @@
     padding: 34px;
     margin: 2rem;
 }
+
+
 #box img{
     height: 17rem;
     width: 20rem;
